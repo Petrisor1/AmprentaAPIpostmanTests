@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "aac04e1b-1ea1-4843-a6bc-3239f99debc4",
+		"_postman_id": "ef0e0242-7ea3-48db-a928-a82b50514d62",
 		"name": "TK11. AmprentaMea API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "19822453"
@@ -76,7 +76,7 @@
 							"    pm.expect(pm.response.json()).to.be.an('array');\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Number of countries is greater than 250\", function () {\r",
+							"pm.test(\"Number of countries is greater than 40\", function () {\r",
 							"    const responseBody = pm.response.json();\r",
 							"    pm.expect(responseBody).to.be.an('array').that.has.length.greaterThan(40);\r",
 							"});\r",
@@ -114,12 +114,8 @@
 							"    pm.expect(responseBody).to.be.an('array').that.has.length.greaterThan(40);\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Number of locations under each country\", function () {\r",
-							"    const countries = pm.response.json();\r",
-							"    countries.forEach((country) => {\r",
-							"        pm.expect(country.locations).to.have.length.greaterThanOrEqual(0);\r",
-							"    });\r",
-							"});"
+							"\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -154,7 +150,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Transportations",
 			"event": [
 				{
 					"listen": "test",
@@ -232,7 +228,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Logare",
 			"event": [
 				{
 					"listen": "test",
